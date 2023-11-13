@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <!-- <div class="container-fluid px-0 overflow-hidden bg-dark">
+            <div class="container d-flex align-items-center justify-content-between py-3 px-3 ">
+                <div class="text-light d-none d-xl-block">
+                    <h5 class="text-body-tetiary d-flex align-items-center">Mon-Thur: <span> 9:00am - 5:30pm</span><span><i class="ri-arrow-down-s-line text-white"></i></span></h5>
+                </div>
+                <div class="text-light ms-5 px-2 d-xl-none">
+                    <h5>Mon-Thur: <span>9:00am - 5:30pm</span><span><i class="ri-arrow-down-s-line text-white"></i></span></h5>
+                </div>
+                <div class=" span-h5 text-light">
+                    <span class="d-none d-xl-inline-block">Visit our showroom at Lagos, Nigeria.</span> <span class="text-underline text-white text-end"> Contact Us </span>
+                </div>
+                <div class="d-none d-xl-block">
+                    <h5 class="text-white">Call us: (00) 1234 5678</h5>
+                </div>
+            </div>
+        </div> -->
+        <div class="container-fluid px-0 overflow-hidden bg-dark">
+            <div class="container py-3">
+                <div class="row text-center">
+                    <div class="col-2 d-xl-none"></div>
+                    <div class="text-light col-6 col-xl-4 text-start text-nowrap">
+                        <h5>Mon-Thur: <span>9:00am - 5:30pm</span><span><i class="ri-arrow-down-s-line text-white"></i></span></h5>
+                    </div>
+                    <div class=" span-h5 text-light col-4">
+                        <span class="d-none d-xl-inline-block">Visit our showroom at Lagos, Nigeria.</span> <span class="text-underline text-white text-end"> Contact Us </span>
+                    </div>
+                    <div class="col-4 d-none d-xl-block">
+                        <h5 class="text-white text-end">Call us: (00) 1234 5678</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav">
+            <nav class="container navbar navbar-expand-lg">
+                <div class="container">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                  <div class="">        
+                    <img class = "d-none d-xl-block" src="assets/brand-logo.svg" class="logo-svg ">
+                    <div class="brand-logo-tab d-xl-none">
+                        <span class="tab-logo-svg position-absolute"><img src="assets/brand-logo-white.png" class="md-logo"></span>
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                  <div class="d-flex align-items-center justify-content-between" id="navbarSupportedContent">
+
+                    <div class=" d-none d-xl-block">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-nowrap">
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Laptops</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Desktop Pcs</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Networking Devices</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Printers and Scanners</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Pc Parts</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">All Other Products</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Repairs</a>
+                            </li>
+                            <li class="nav-item">
+                              <button class="btn btn-outline-primary" type="submit">Our Deals</button>
+                            </li>
+                          </ul>
+
+                    </div>
+                    
+                    <div class=" d-xl-none ps-5">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+
+                        <ul class="d-flex align-items-center justify-content-between gx-3">
+                            <li class="search-icon pe-4 d-none d-xl-block">
+                                <div class="icon-large"><i onclick="toggleSearch()" class="ri-search-line pointer"></i></div>
+                            </li>
+                            <li class="icon-large pe-4">
+                                <div><i class="ri-shopping-cart-line"></i></div>
+                                <div class="fly-item "><span class="item-number">2</span></div>
+                            </li>
+                            <li>
+                                <div class="round-item">
+                                    <img class="pfp" src="assets/pfp.jpeg">
+                                </div>
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+    </header>
+
+     <!-- Swiper -->
+        <!-- <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper swiper-image">
+                 
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/slider-1.png"></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/slider-2.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> -->
+
+
+        <!-- Products Section -->
+        <!-- <section class="product-swiper container mt-5">
+            <div class="products-title d-flex align-items-center justify-content-between">
+                <h4>New Products</h4>
+                <a class="default-link pointer"> See all New Products</a>
+            </div>
+            <div class="swiper-container overflow-hidden mx-auto">
+                <div class="swiper-2 product">
+                    <div class="swiper-wrapper swiper-image">
+                      
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img class="mx-auto" src="assets/msi-flex.png">
+                                <div class="star-ratings mb-3">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="unavailable"><i class="ri-phone-fill"></i><span> check availability</span></div>
+                                <img src="assets/msi-2.png">
+                                <div class="star-ratings mb-3">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/msi-3.png">
+                                <div class="star-ratings mb-3">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/msi-4.png">
+                                <div class="star-ratings mb-3">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/msi-5.png">
+                                <div class="star-ratings mb-3">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/msi-6.png">
+                                <div class="star-ratings mb-3">★★★★★  <span> Reviews(4) </span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class=" product-showcase container py-5"> -->
+            <!-- <div class="zip-wrapper h-auto ">
+                <div class="d-flex px-auto text-center">
+                    <img src="assets/zip.png">
+                    <p>own <span>it now,up to 6 months interest free</span></p>
+                    <a>learn more</a>
+                </div>
+            </div> -->
+
+            <!-- Custom Builds -->
+            <!-- <div class="row pb-5">
+                <div class="col-12 col-sm-4 col-lg-3 col-xl-2 product-img-title custom-build text-center">
+                    <div class="inside-product-category">
+                        <h4 class="position-absolute top-50 start-50 translate-middle">Custom <span>Builds</span></h4>
+                        <a class="pointer start-50 translate-middle">See all products</a>
+                    </div>
+                </div>
+                <div class="container-fluid overflow-hidden mx-0 px-0 col-12 col-sm-8 col-lg-9 col-xl-10">
+                    <div class=" swiper-3">
+                        <div class="swiper-wrapper">
+                          
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/charlie-v6.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/bravo-v6.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/alpha-v6.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/zulu-v6.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img class="" src="assets/delta-v6.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+                        </div>
+                    </div>            
+                </div>
+            </div> -->
+
+            <!-- MSI Laptops -->
+            <!-- <div class="pb-5">
+                <div class="d-none d-sm-block px-0 pb-2">
+                    <a class="pe-2">MSI GS Series</a>
+                    <a class="pe-2">MSI GT Series</a>
+                    <a class="pe-2">MSI GL Series</a>
+                </div>
+                <div class="row px-0">
+                    <div class="col-12 col-sm-4 col-lg-3 col-xl-2 mb-0 product-img-title msi-laptop text-center">
+                        <div class="inside-product-category">
+                            <h4 class="position-absolute top-50 start-50 translate-middle">MSI <span>Laptops</span></h4>
+                            <a class="pointer start-50 translate-middle">See all products</a>
+                        </div>
+                    </div>
+                    <div class="d-sm-none px-0 pb-2">
+                        <a class="pe-2">MSI GS Series</a>
+                        <a class="pe-2">MSI GT Series</a>
+                        <a class="pe-2">MSI GL Series</a>
+                    </div>
+                    <div class="container-fluid overflow-hidden mx-0 px-0 col-12 col-sm-8 col-lg-9 col-xl-10">
+                        <div class=" swiper-3">
+                            <div class="swiper-wrapper">
+                              
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/laptop-1.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/laptop-2.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/laptop-3.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/laptop-3.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+    
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img class="" src="assets/laptop-4.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Desktops -->
+            <!-- <div class="pb-5">
+                <div class="d-none d-sm-block px-0 pb-2">
+                    <a class="pe-2">MSI Infinite Series</a>
+                    <a class="pe-2">MSI Triden</a>
+                    <a class="pe-2">MSI GL Series</a>
+                    <a class="pe-2">MSI NightBlade</a>
+                </div>
+                <div class="row px-0">
+                    <div class="col-12 col-sm-4 col-lg-3 col-xl-2 mb-0 product-img-title msi-desktop text-center">
+                        <div class="inside-product-category">
+                            <h4 class="position-absolute top-50 start-50 translate-middle">Desktops</h4>
+                            <a class="pointer start-50 translate-middle">See all products</a>
+                        </div>
+                    </div>
+                    <div class="d-sm-none px-0 pb-2">
+                        <a class="pe-2">MSI Infinite Series</a>
+                        <a class="pe-2">MSI Triden</a>
+                        <a class="pe-2">MSI GL Series</a>
+                        <a class="pe-2">MSI NightBlade</a>
+                    </div>
+                    <div class="container-fluid overflow-hidden mx-0 px-0 col-12 col-sm-8 col-lg-9 col-xl-10">
+                        <div class=" swiper-3">
+                            <div class="swiper-wrapper">
+                              
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/desktop-1.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/desk-2.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/desk-3.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+        
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img src="assets/desk-3.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+    
+                              <div class="swiper-slide px-3">
+                                <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                                <img class="" src="assets/desk-3.png">
+                                <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                                <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                                <h6 class="old-price">$499.99</h6>
+                                <h5 class="new-price">$499.99</h5>  
+                              </div>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Gaming Monitors -->
+            <!-- <div class="row pb-5">
+                <div class="col-12 col-sm-4 col-lg-3 col-xl-2 product-img-title msi-monitor text-center">
+                    <div class="inside-product-category">
+                        <h4 class="position-absolute top-50 start-50 translate-middle">Gaming <span>Monitors</span></h4>
+                        <a class="pointer start-50 translate-middle">See all products</a>
+                    </div>
+                </div>
+                <div class="container-fluid overflow-hidden mx-0 px-0 col-12 col-sm-8 col-lg-9 col-xl-10">
+                    <div class=" swiper-3">
+                        <div class="swiper-wrapper">
+                          
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/monitor-1.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/monitor-1.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/monitor-3.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+    
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img src="assets/monitor-4.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+
+                          <div class="swiper-slide px-3">
+                            <div class="available"><i class="ri-checkbox-circle-line"></i><span> In stock</span></div>
+                            <img class="" src="assets/monitor-3.png">
+                            <div class="star-ratings">★★★★★  <span>Reviews(4)</span></div>
+                            <h5 class="product-detail">EX DISPLAY : MSI Pro 16 <br>Flex-036AU 15.6 MULTITOUCH All-In-On...</h5>
+                            <h6 class="old-price">$499.99</h6>
+                            <h5 class="new-price">$499.99</h5>  
+                          </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>      -->
+        <!-- </section> -->
+
+        <!-- <section class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 22.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 23.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 24.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 25.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 26.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 27.png">
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <img class="col" src="assets/Frame 34.png">
+                </div>
+            </div>
+        </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
