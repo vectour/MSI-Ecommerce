@@ -19,22 +19,6 @@
 </head>
 <body>
     <header>
-        <!-- <div class="container-fluid px-0 overflow-hidden bg-dark">
-            <div class="container d-flex align-items-center justify-content-between py-3 px-3 ">
-                <div class="text-light d-none d-xl-block">
-                    <h5 class="text-body-tetiary d-flex align-items-center">Mon-Thur: <span> 9:00am - 5:30pm</span><span><i class="ri-arrow-down-s-line text-white"></i></span></h5>
-                </div>
-                <div class="text-light ms-5 px-2 d-xl-none">
-                    <h5>Mon-Thur: <span>9:00am - 5:30pm</span><span><i class="ri-arrow-down-s-line text-white"></i></span></h5>
-                </div>
-                <div class=" span-h5 text-light">
-                    <span class="d-none d-xl-inline-block">Visit our showroom at Lagos, Nigeria.</span> <span class="text-underline text-white text-end"> Contact Us </span>
-                </div>
-                <div class="d-none d-xl-block">
-                    <h5 class="text-white">Call us: (00) 1234 5678</h5>
-                </div>
-            </div>
-        </div> -->
         <div class="container-fluid px-0 overflow-hidden bg-dark">
             <div class="container py-3">
                 <div class="row text-center">
@@ -51,93 +35,87 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="header-nav">
-            <nav class="container navbar navbar-expand-lg">
-                <div class="container">
-                  <!-- <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button> -->
-                  <div class="">        
-                    <img class = "d-none d-xl-block" src="assets/brand-logo.svg" class="logo-svg ">
+    <div class=" header-nav py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">      
+                    <img class = "d-none d-xl-block" src="assets/brand-logo-white.png">
                     <div class="brand-logo-tab d-xl-none">
                         <span class="tab-logo-svg position-absolute"><img src="assets/brand-logo-white.png" class="md-logo"></span>
                         <i class="ri-menu-line"></i>
                     </div>
                 </div>
-                  <div class="d-flex align-items-center justify-content-between" id="navbarSupportedContent">
-
-                    <div class=" d-none d-xl-block">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-nowrap">
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Laptops</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Desktop Pcs</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Networking Devices</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Printers and Scanners</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Pc Parts</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">All Other Products</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active"  href="#">Repairs</a>
-                            </li>
-                            <li class="nav-item">
-                              <button class="btn btn-outline-primary" type="submit">Our Deals</button>
-                            </li>
-                          </ul>
-
+                <div class="col-9">
+                    <div class="nav-links">
+                        <div class="d-none d-xl-block">
+                            <ul class="d-flex align-items-center justify-content-between fs-6 fw-bold text-wrap">
+                                <li><a>Laptops</a></li>
+                                <li><a>Desktops Pc</a></li>
+                                <li><a>Networking Devices</a></li> 
+                                <li><a>Printers and Scanners</a></li>
+                                <li><a>Pc Parts</a></li>
+                                <li><a>All Other Products</a></li>
+                                <li><a>Repairs</a></li>
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-primary" type="submit">Our Deals</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class=" d-xl-none ps-5">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="hidden onshow">
+                        <div class="hidden-search">
+                            <i class="ri-search-line"></i>
+                            <input type="text" class="search" placeholder="Search Here">
+                        </div> 
                     </div>
-
-                        <ul class="d-flex align-items-center justify-content-between gx-3">
-                            <li class="search-icon pe-4 d-none d-xl-block">
-                                <div class="icon-large"><i onclick="toggleSearch()" class="ri-search-line pointer"></i></div>
-                            </li>
-                            <li class="icon-large pe-4">
-                                <div><i class="ri-shopping-cart-line"></i></div>
-                                <div class="fly-item "><span class="item-number">2</span></div>
-                            </li>
-                            <li>
-                                <div class="round-item">
-                                    <img class="pfp" src="assets/pfp.jpeg">
-                                </div>
-                            </li>
-                        </ul>
-                  </div>
+                    <!-- <div class="search-bar">
+                        <div class="">
+                            <input type="text" class="w-100 rounded">
+                        </div>
+                    </div> -->
                 </div>
-              </nav>
-        </div>
+                <div class="col-2">
+                    <ul class="d-flex align-items-center justify-content-between mx-0">
+                        <li class="search d-none d-xl-block ">
+                            <div class="icon-large pointer" onclick="toggleSearch()">
+                                <i class="ri-search-line search-icon"></i>
+                                <img src="assets/gg_search.png" class="remove-search onshow">
+                            </div>
 
-    </header>
+                        </li>
+                        <li class="icon-large pe-4">
+                            <div><i class="ri-shopping-cart-line"></i></div>
+                            <div class="fly-item "><span class="item-number">2</span></div>
+                        </li>
+                        <li>
+                            <div class="round-item">
+                                <img class="pfp" src="assets/pfp.jpeg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
      <!-- Swiper -->
-        <!-- <div class="container">
+        <div class="container">
             <div class="swiper">
                 <div class="swiper-wrapper swiper-image">
-                 
                   <div class="swiper-slide"><img class="img-fluid" src="assets/slider-1.png"></div>
                   <div class="swiper-slide"><img class="img-fluid" src="assets/slider-2.png"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div> -->
+        </div>
 
 
         <!-- Products Section -->
-        <!-- <section class="product-swiper container mt-5">
+        <section class="product-swiper container mt-5">
             <div class="products-title d-flex align-items-center justify-content-between">
                 <h4>New Products</h4>
                 <a class="default-link pointer"> See all New Products</a>
@@ -212,9 +190,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class=" product-showcase container py-5"> -->
+        <section class=" product-showcase container py-5">
             <!-- <div class="zip-wrapper h-auto ">
                 <div class="d-flex px-auto text-center">
                     <img src="assets/zip.png">
@@ -224,7 +202,7 @@
             </div> -->
 
             <!-- Custom Builds -->
-            <!-- <div class="row pb-5">
+            <div class="row pb-5">
                 <div class="col-12 col-sm-4 col-lg-3 col-xl-2 product-img-title custom-build text-center">
                     <div class="inside-product-category">
                         <h4 class="position-absolute top-50 start-50 translate-middle">Custom <span>Builds</span></h4>
@@ -282,10 +260,10 @@
                         </div>
                     </div>            
                 </div>
-            </div> -->
+            </div>
 
             <!-- MSI Laptops -->
-            <!-- <div class="pb-5">
+            <div class="pb-5">
                 <div class="d-none d-sm-block px-0 pb-2">
                     <a class="pe-2">MSI GS Series</a>
                     <a class="pe-2">MSI GT Series</a>
@@ -355,10 +333,10 @@
                         </div>            
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Desktops -->
-            <!-- <div class="pb-5">
+            <div class="pb-5">
                 <div class="d-none d-sm-block px-0 pb-2">
                     <a class="pe-2">MSI Infinite Series</a>
                     <a class="pe-2">MSI Triden</a>
@@ -430,10 +408,10 @@
                         </div>            
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Gaming Monitors -->
-            <!-- <div class="row pb-5">
+            <div class="row pb-5">
                 <div class="col-12 col-sm-4 col-lg-3 col-xl-2 product-img-title msi-monitor text-center">
                     <div class="inside-product-category">
                         <h4 class="position-absolute top-50 start-50 translate-middle">Gaming <span>Monitors</span></h4>
@@ -491,10 +469,10 @@
                         </div>
                     </div>            
                 </div>
-            </div>      -->
-        <!-- </section> -->
+            </div>     
+        </section>
 
-        <!-- <section class="container">
+        <section class="container">
             <div class="row">
                 <div class="col-6 col-md-4 col-xl-2">
                     <img class="col" src="assets/Frame 22.png">
@@ -518,6 +496,114 @@
                     <img class="col" src="assets/Frame 34.png">
                 </div>
             </div>
+        </section>
+
+        <!-- <section class="container d-none d-xl-block">
+            <p>Follow us on instagram for News, Offers & More</p>
+            <div class="row">
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+                <div class="col-2 text-center">
+                    <img>
+                    <p class="smaller-font fw-bold">If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...</p>
+                    <span class="smaller-font">01.09.2020</span>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="container">
+            <div class="container text-center">
+                <div class=" swiper-3">
+                    <div class="swiper-wrapper">                     
+                      <div class="swiper-slide px-3">
+                        
+                      </div>
+                    </div>                 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-4 text-center">
+                    <p>Product Support</p>
+                    <span>Up to 3 years on-site warranty available for your peace of mind.</span>
+                </div>
+                <div class="col-12 col-sm-4"></div>
+                <div class="col-12 col-sm-4"></div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
         </section> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

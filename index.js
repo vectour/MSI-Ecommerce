@@ -1,6 +1,8 @@
 const hidden = document.querySelector('.hidden');
-const nav = document.querySelector('.navigation');
-const main_search = document.querySelector('.main-search');
+const nav = document.querySelector('.nav-links');
+const search_bar = document.querySelector('.main-search');
+const search_icon = document.querySelector('.search-icon');
+const remove_search = document.querySelector('.remove-search');
 
 
 function toggleSearch() {
@@ -8,10 +10,14 @@ function toggleSearch() {
         hidden.classList.remove('onShow');
         hidden.style.display = 'none';
         nav.style.display = 'block';
+        search_icon.style.display = 'block';
+        remove_search.style.display = 'none';
     }else {
         hidden.classList.add('onShow');
         hidden.style.display = 'block';
         nav.style.display = 'none';
+        search_icon.style.display = 'none';
+        remove_search.style.display = 'block';
     }
 }
 

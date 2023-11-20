@@ -8,6 +8,7 @@
 
     --font-small: 12px;
     --font-smaller: 9px;
+    --font-medium: 15px;
 
     --fw-3: 300;
     --fw-5: 500;
@@ -47,6 +48,7 @@ a{
     text-decoration: none;
     color: inherit;
     font-weight: var(--fw-6);
+    cursor: pointer;
 }
 
 ul{
@@ -82,6 +84,14 @@ font-weight: var(--fw-6)
 
 h5, .span-h5{
 font-size: 0.8em !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.smaller-font{
+    font-size: var(--font-small);
 }
 
 
@@ -176,6 +186,9 @@ font-size: 0.8em !important;
     padding: 0 auto;
 }
 
+.search-bar input{
+    height: 2.45em;
+}
 
 /* Product Swiper */
 .swiper-item{
@@ -311,6 +324,16 @@ font-size: 0.8em !important;
         color: var(--primary-color);
         background-color: var(--white-color);
     }
+
+    .onshow{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .onshow{
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -330,3 +353,4 @@ font-size: 0.8em !important;
     }
 }
     
+
